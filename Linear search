@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main() 
+{
+int a[100], x, flag=0, n, i;
+printf("Enter the size of the array: ") ;
+scanf(%d",&n) ;
+printf(" Enter the values to insert the array: ") ;
+ for(i=0;i<n;i++)
+  {
+   scanf("%d", &a[i]) ;
+   }
+prints(" Enter the element to be searched: ") ;
+scanf("%d", &x) ;
+  for(i=0;i<n;i++) 
+  {
+     if(a[i]==x) 
+     {
+      flag=1;
+      break;
+      }
+   }
+ if(flag==1) 
+  prints(" Elements is found in position" , i++) ;
+ else
+  prints( "The element is not found") ;
+return 0;
+}
